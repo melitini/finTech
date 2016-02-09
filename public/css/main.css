@@ -1,0 +1,66 @@
+body {
+	background-color: #d7d7d7;
+}
+
+.entry-content {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+    background-color: #d7d7d7;
+}
+
+.first-panel {
+    float: left;
+    height: 80vh;
+    padding: 10px;
+    width : 95%;
+    margin: auto;
+    background: #ffffff;
+}
+.second-panel {
+    float: left;
+    height: 80vh;
+    width: 90%;
+    background: green;
+    position: absolute; right: -150%; top: 0; z-index: 50;
+
+}
+.third-panel {
+    float: left;
+    height: 80vh;
+    width: 80%;
+    background:cyan;
+    position: absolute; right: -150%; top: 0; z-index: 100;
+}
+
+.image {
+	background: url("img/photo.gif");
+	height: 60px;
+	width: 60px;
+	background-size: cover;
+	float: left;
+}
+
+.first {
+	border-bottom: 1px solid #d7d7d7;
+	padding: 20px;
+	overflow: hidden;
+
+}
+
+.account {
+	padding-left: 12%;
+}
+
+
+
+
+/*<!-- CSS media query within a stylesheet -->*/
+
+@media (max-width: 800px) {
+  .entry-content, .first-panel, .second-panel, .third-panel {
+    width:100%;
+
+  }
+
+}
