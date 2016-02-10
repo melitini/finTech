@@ -19,6 +19,9 @@ body {
     margin: auto;
     overflow: auto;
     height: 100%;
+    color: #66667C;
+    box-shadow:  0 0 10px rgba(0,0,0,0.6);
+    border: 10px solid #ffffff;
 }
 .first {
 	border-bottom: 1px solid #d7d7d7;
@@ -39,15 +42,16 @@ body {
   width: 50%;
   height: 30px;
   position: relative;
-  background-color: #ddd;
+  background-color: #ffffff;
   float: left;
   align-self: center;
   margin-left: 2%;
   border-radius: 9px;
+  border: solid 2px lightgrey;
 }
 
 #creditBar {
-  background-color: #4CAF50;
+  background-color: #E6E6E6;
   width: 30px;
   height: 30px;
   position: absolute;
@@ -64,6 +68,8 @@ body {
     overflow: scroll;
     height: 100%;
     max-height: 100%;
+    border: 2px solid #868686;
+    box-shadow:  0 0 10px rgba(0,0,0,0.6);
     position: absolute; right: -120%; top: 0; z-index: 50;
 }
 .second-panel-header {
@@ -78,12 +84,13 @@ body {
   width: 90%;
   height: 30px;
   position: relative;
-  background-color: #ddd;
+  background-color: #ffffff;
   border-radius: 9px;
+  margin-bottom: 3%;
 }
 
 #bar {
-  background-color: #4CAF50;
+  background-color: #E6E6E6;
   width: 10px;
   height: 30px;
   position: absolute;
@@ -110,7 +117,7 @@ body {
 	text-align: right;
 }
 .accounts {
-	padding-left: 5%;
+	padding: 0 5% 0 5%;
 	height: 60%;
 }
 .individual-accounts {
@@ -133,12 +140,12 @@ body {
   width: 50%;
   height: 25px;
   position: relative;
-  background-color: #ddd;
+  background-color: #ffffff;
   border-radius: 9px;
 }
 
 #accountBar {
-  background-color: #4CAF50;
+  background-color: #E6E6E6;
   width: 10px;
   height: 25px;
   position: absolute;
@@ -154,6 +161,8 @@ body {
     overflow: auto;
     height: 100%;
     max-height: 100%;
+    border: solid 1px #868686;
+    box-shadow:  0 0 10px rgba(0,0,0,0.6);
     position: absolute; right: -120%; top: 0; z-index: 100;
 }
 
