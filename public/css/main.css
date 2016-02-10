@@ -21,7 +21,6 @@ body {
     height: 100%;
     color: #66667C;
     box-shadow:  0 0 10px rgba(0,0,0,0.6);
-    border: 10px solid #ffffff;
 }
 .first {
 	border-bottom: 1px solid #d7d7d7;
@@ -51,7 +50,7 @@ body {
 }
 
 #creditBar {
-  background-color: #E6E6E6;
+  background: linear-gradient(to right, #f2f2f2 , #E6E6E6);
   width: 30px;
   height: 30px;
   position: absolute;
@@ -72,6 +71,9 @@ body {
     box-shadow:  0 0 10px rgba(0,0,0,0.6);
     position: absolute; right: -120%; top: 0; z-index: 50;
 }
+a {
+	color: white !important;
+}
 .second-panel-header {
 	background-color: #868686;
 	color: white;
@@ -90,7 +92,7 @@ body {
 }
 
 #bar {
-  background-color: #E6E6E6;
+  background: linear-gradient(to right, #f2f2f2 , #E6E6E6);
   width: 10px;
   height: 30px;
   position: absolute;
@@ -125,13 +127,14 @@ body {
 	align-items: center;
 	color: #9397A5;
 	border-bottom: 1px solid #9397A5;
-	padding: 5% 0 5% 0;
+	padding: 3% 0 3% 0;
 
 }
 .account-image {
 	background: url("img/photo.gif");
 	height: 30px;
 	width: 30px;
+	margin-right: 2%;
 	background-size: cover;
 	align-self: flex-start;
 }
@@ -141,12 +144,13 @@ body {
   height: 25px;
   position: relative;
   background-color: #ffffff;
+  border: solid 2px lightgrey;
   border-radius: 9px;
 }
 
 #accountBar {
-  background-color: #E6E6E6;
-  width: 10px;
+  background: linear-gradient(to right, #f2f2f2 , #E6E6E6);
+  width: 50%;
   height: 25px;
   position: absolute;
   border-radius: 9px;
@@ -168,8 +172,9 @@ body {
 
 .transaction-detail-header {
 	background-color: #c9c9c9;
-	height: 50px;
-	width: 100%
+	height: 60px;
+	width: 100%;
+	padding: 1% 10% 5% 5%;
 }
 
 .transaction-detail-subheader {
@@ -196,7 +201,7 @@ body {
 
 .transaction-individual {
 	display: flex;
-	border-bottom: 1px solid #868686;
+	border-bottom: 1px solid #d7d7d7;
 	padding: 2% 0 2% 0;
 }
 
@@ -214,7 +219,6 @@ body {
 .transaction-info-amount, .transaction-info-balance {
 	flex-grow: 2;
 }
-
 
 .flex {
 	display: flex;
