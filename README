@@ -1,1 +1,14 @@
 README
+
+This coding challenge was built using the following:
+HTML, CSS, JavaScript, and the following node modules:
+Bootstrap, Normalize.css, EJS, Express, jQuery. 
+
+
+To run:
+* You must have Node.JS installed in your computer *
+1. Save file in a folder locally.
+2. Navigate to the folder from your terminal.
+3. Type the command [ nodemon ] (without brackets)
+4. Navigate on your browser to http://localhost:3000/
+
