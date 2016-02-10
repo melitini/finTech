@@ -2,17 +2,13 @@ $(function() {
     //Open panels
     $('.first').click(function(ev) {
         var $second = $('.second-panel');
-        // r = parseInt($second.css('right'), 0);
         $second.animate({right: 0}, 1000);
+        move();
     });
-    $('.second').click(function(ev) {
-        var $third = $('.third-panel'),
-        r = parseInt($third.css('right'), 0);
-
+    $('.individual-accounts').click(function(ev) {
+        var $third = $('.third-panel');
         $third.animate({right: 0}, 1000);
     });
-
-
     //Close panels
     $(".second-panel").on("click", ".close-panel", function(e) {
         var $second = $('.second-panel');
@@ -22,36 +18,22 @@ $(function() {
         var $third = $('.third-panel');
         $third.animate({right: '-150%'}, 1000)
     });
-
-
-
-
-
-
-
-
-    //     //Open panels
-    // $('.first').click(function(ev) {
-    //     var $second = $('.second-panel'),
-    //     r = parseInt($second.css('right'), 0);
-
-    //     $second.animate({right: '10%'}, 1000);
-    // });
-    // $('.second').click(function(ev) {
-    //     var $third = $('.third-panel'),
-    //     r = parseInt($third.css('right'), 0);
-
-    //     $third.animate({right: '5%'}, 1000);
-    // });
-
-
-    // //Close panels
-    // $(".second-panel").on("click", ".close-panel", function(e) {
-    //     var $second = $('.second-panel');
-    //     $second.animate({right: '-150%'}, 1000)
-    // });
-    // $(".third-panel").on("click", ".close-panel", function(e) {
-    //     var $third = $('.third-panel');
-    //     $third.animate({right: '-150%'}, 1000)
-    // });
 });
+
+
+
+
+
+function move() {
+    var elem = document.getElementById("bar"); 
+    var width = 0;
+    var id = setInterval(frame, 50);
+    function frame() {
+        if (width == 100) {
+            clearInterval(id);
+        } else {
+            width++; 
+            elem.style.width = width + '%'; 
+        }
+    }
+}

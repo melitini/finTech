@@ -1,63 +1,184 @@
 body {
 	background-color: #d7d7d7;
 }
-
 .entry-content {
     overflow-x: hidden;
     width: 100%;
     position: relative;
     background-color: #d7d7d7;
+    max-height: 90vh;
 }
 
+/* ----- First Panel -----*/
 .first-panel {
-    float: left;
-    height: 80vh;
-    padding: 10px;
-    width : 95%;
-    margin: auto;
+    width : 90%;
     background: #ffffff;
+    margin: auto;
+    overflow: auto;
 }
-.second-panel {
-    float: left;
-    height: 80vh;
-    width: 90%;
-    background: green;
-    position: absolute; right: -150%; top: 0; z-index: 50;
-
-}
-.third-panel {
-    float: left;
-    height: 80vh;
-    width: 80%;
-    background:cyan;
-    position: absolute; right: -150%; top: 0; z-index: 100;
-}
-
-.image {
-	background: url("img/photo.gif");
-	height: 60px;
-	width: 60px;
-	background-size: cover;
-	float: left;
-}
-
 .first {
 	border-bottom: 1px solid #d7d7d7;
 	padding: 20px;
 	overflow: hidden;
 
 }
+.first-panel-image {
+	background: url("img/photo.gif");
+	height: 60px;
+	width: 60px;
+	background-size: cover;
+	float: left;
+}
+.category {
+	padding-left: 10%;
+}
 
-.account {
-	padding-left: 12%;
+/* ----- Second Panel -----*/
+.second-panel {
+    float: left;
+    width: 80%;
+    background: #f2f2f2;
+    overflow-y: scroll;
+    position: absolute; right: -150%; top: 0; z-index: 50;
+}
+.second-panel-header {
+	background-color: #868686;
+	color: white;
+	width: 100%;
+	padding: 1% 10% 5% 5%;
+	height: 40%;
+}
+
+#progressBar {
+  width: 90%;
+  height: 30px;
+  position: relative;
+  background-color: #ddd;
+}
+
+#bar {
+  background-color: #4CAF50;
+  width: 10px;
+  height: 30px;
+  position: absolute;
+}
+
+.summary {
+	display: flex;
+}
+.summary-image {
+	background: url("img/whiteSquare.png");
+	height: 10px;
+	width: 10px;
+	float: left;
+	margin-right: 1%;
+
+}
+.summary-text{
+
+}
+.summary-amount {
+
+	flex-grow: 1;
+	text-align: right;
+}
+.accounts {
+	padding-left: 5%;
+	height: 60%;
+}
+.individual-accounts {
+	display: flex;
+	align-items: center;
+	color: #9397A5;
+	border-bottom: 1px solid #9397A5;
+	padding: 5% 0 5% 0;
+
+}
+.account-image {
+	background: url("img/photo.gif");
+	height: 30px;
+	width: 30px;
+	background-size: cover;
+	align-self: flex-start;
+}
+
+#accountProgressBar {
+  width: 50%;
+  height: 25px;
+  position: relative;
+  background-color: #ddd;
+}
+
+#accountBar {
+  background-color: #4CAF50;
+  width: 10px;
+  height: 25px;
+  position: absolute;
 }
 
 
+/* ----- Third Panel -----*/
+.third-panel {
+    float: left;
+    height: 80vh;
+    width: 70%;
+    background: #ffffff;
+    overflow: auto;
+    position: absolute; right: -150%; top: 0; z-index: 100;
+}
 
+.transaction-detail-header {
+	background-color: #868686;
+	height: 50px;
+	width: 100%
+}
+
+.transaction-detail-subheader {
+	background-color: #e4e4e4;
+	height: 30px;
+	width: 100%;
+	display: flex;
+	padding: 0 5 0 5;
+}
+.subheader-space {
+	flex-grow: 5;
+}
+.subheader-amount {
+	flex-grow: 2;
+	text-align: center;
+}
+.subheader-balance {
+	flex-grow: 2;
+}
+
+.transaction-list {
+	padding: 5%;
+}
+
+.transaction-individual {
+	display: flex;
+	border-bottom: 1px solid #868686;
+	padding: 2% 0 2% 0;
+}
+
+.transaction-info-image {
+	background: url("img/photo.gif");
+	height: 50px;
+	width: 50px;
+	background-size: cover;
+	align-self:	center;
+}
+.transaction-info-text {
+	flex-grow: 4;
+	padding-left: 2%;
+}
+.transaction-info-amount, .transaction-info-balance {
+	flex-grow: 2;
+}
 
 /*<!-- CSS media query within a stylesheet -->*/
 
-@media (max-width: 800px) {
+@media (max-width: 767px) {
   .entry-content, .first-panel, .second-panel, .third-panel {
     width:100%;
 
