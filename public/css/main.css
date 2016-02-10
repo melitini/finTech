@@ -2,19 +2,23 @@ body {
 	background-color: #d7d7d7;
 }
 .entry-content {
+    overflow-y: scroll;
     overflow-x: hidden;
+    margin-top: 5%;
     width: 100%;
     position: relative;
     background-color: #d7d7d7;
+    height: 80vh;
     max-height: 90vh;
 }
 
 /* ----- First Panel -----*/
 .first-panel {
-    width : 90%;
+    width : 70%;
     background: #ffffff;
     margin: auto;
     overflow: auto;
+    height: 100%;
 }
 .first {
 	border-bottom: 1px solid #d7d7d7;
@@ -28,18 +32,39 @@ body {
 	width: 60px;
 	background-size: cover;
 	float: left;
+	margin-right: 5%;
 }
-.category {
-	padding-left: 10%;
+
+#creditProgressBar {
+  width: 50%;
+  height: 30px;
+  position: relative;
+  background-color: #ddd;
+  float: left;
+  align-self: center;
+  margin-left: 2%;
+  border-radius: 9px;
 }
+
+#creditBar {
+  background-color: #4CAF50;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  float: left;
+  border-radius: 9px;
+}
+
 
 /* ----- Second Panel -----*/
 .second-panel {
     float: left;
-    width: 80%;
+    width: 65%;
     background: #f2f2f2;
-    overflow-y: scroll;
-    position: absolute; right: -150%; top: 0; z-index: 50;
+    overflow: scroll;
+    height: 100%;
+    max-height: 100%;
+    position: absolute; right: -120%; top: 0; z-index: 50;
 }
 .second-panel-header {
 	background-color: #868686;
@@ -54,6 +79,7 @@ body {
   height: 30px;
   position: relative;
   background-color: #ddd;
+  border-radius: 9px;
 }
 
 #bar {
@@ -61,6 +87,7 @@ body {
   width: 10px;
   height: 30px;
   position: absolute;
+  border-radius: 9px;
 }
 
 .summary {
@@ -107,6 +134,7 @@ body {
   height: 25px;
   position: relative;
   background-color: #ddd;
+  border-radius: 9px;
 }
 
 #accountBar {
@@ -114,21 +142,23 @@ body {
   width: 10px;
   height: 25px;
   position: absolute;
+  border-radius: 9px;
 }
 
 
 /* ----- Third Panel -----*/
 .third-panel {
     float: left;
-    height: 80vh;
-    width: 70%;
+    width: 60%;
     background: #ffffff;
     overflow: auto;
-    position: absolute; right: -150%; top: 0; z-index: 100;
+    height: 100%;
+    max-height: 100%;
+    position: absolute; right: -120%; top: 0; z-index: 100;
 }
 
 .transaction-detail-header {
-	background-color: #868686;
+	background-color: #c9c9c9;
 	height: 50px;
 	width: 100%
 }
@@ -176,12 +206,26 @@ body {
 	flex-grow: 2;
 }
 
+
+.flex {
+	display: flex;
+}
 /*<!-- CSS media query within a stylesheet -->*/
 
 @media (max-width: 767px) {
-  .entry-content, .first-panel, .second-panel, .third-panel {
-    width:100%;
+  .entry-content, .first-panel  {
+    width: 100% ;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .second-panel, .third-panel {
+  	width: 100%;
+  	margin-left: auto;
+    margin-right: auto;
 
   }
+
 
 }
