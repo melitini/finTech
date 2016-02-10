@@ -2,30 +2,30 @@ body {
 	background-color: #d7d7d7;
 }
 .entry-content {
-    overflow-y: scroll;
-    overflow-x: hidden;
-    margin-top: 5%;
-    width: 100%;
-    position: relative;
-    background-color: #d7d7d7;
-    height: 80vh;
-    max-height: 90vh;
+  width: 100%;
+  height: 80vh;
+  max-height: 90vh;
+  margin-top: 5%;
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #d7d7d7;
 }
 
 /* ----- First Panel -----*/
 .first-panel {
-    width : 70%;
-    background: #ffffff;
-    margin: auto;
-    overflow: auto;
-    height: 100%;
-    color: #66667C;
-    box-shadow:  0 0 10px rgba(0,0,0,0.6);
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  overflow: auto;
+  box-shadow:  0 0 10px rgba(0,0,0,0.6);
+  color: #66667C;
+  background: #ffffff;
 }
 .first {
-	border-bottom: 1px solid #d7d7d7;
 	padding: 20px;
 	overflow: hidden;
+  border-bottom: 1px solid #d7d7d7;
 
 }
 .first-panel-image {
@@ -40,150 +40,158 @@ body {
 #creditProgressBar {
   width: 50%;
   height: 30px;
+  margin-left: 2%;
   position: relative;
-  background-color: #ffffff;
   float: left;
   align-self: center;
-  margin-left: 2%;
   border-radius: 9px;
   border: solid 2px lightgrey;
+  background-color: #ffffff;
 }
 
 #creditBar {
-  background: linear-gradient(to right, #f2f2f2 , #E6E6E6);
   width: 30px;
   height: 30px;
   position: absolute;
   float: left;
   border-radius: 9px;
+  background: linear-gradient(to right, #f2f2f2 , #E6E6E6);
 }
 /* ----- END First Panel -----*/
 
 
 /* ----- Second Panel -----*/
 .second-panel {
-    float: left;
-    width: 65%;
-    background: #f2f2f2;
-    overflow: scroll;
-    height: 100%;
-    max-height: 100%;
-    border: 2px solid #868686;
-    box-shadow:  0 0 10px rgba(0,0,0,0.6);
-    position: absolute; right: -120%; top: 0; z-index: 50;
+  width: 65%;
+  height: 100%;
+  max-height: 100%;
+  float: left;
+  overflow: scroll;
+  position: absolute; 
+  right: -120%; 
+  top: 0; 
+  z-index: 50;
+  border: 2px solid #868686;
+  box-shadow:  0 0 10px rgba(0,0,0,0.6);
+  background: #f2f2f2;
 }
+
 a {
-	color: white !important;
-}
-.second-panel-header {
-	background-color: #868686;
 	color: white;
-	width: 100%;
-	padding: 1% 10% 5% 5%;
-	height: 40%;
+  text-align: right;
+}
+
+.second-panel-header {
+  height: 40%;
+  width: 100%;
+  padding: 1% 10% 5% 5%;
+  color: white;
+	background-color: #868686;
 }
 
 #progressBar {
   width: 90%;
   height: 30px;
-  position: relative;
-  background-color: #ffffff;
-  border-radius: 9px;
   margin-bottom: 3%;
+  position: relative;
+  border-radius: 9px;
+  background-color: #ffffff;
 }
 
 #bar {
-  background: linear-gradient(to right, #f2f2f2 , #E6E6E6);
   width: 10px;
   height: 30px;
   position: absolute;
   border-radius: 9px;
+  background: linear-gradient(to right, #f2f2f2 , #E6E6E6);
 }
 
 .summary {
 	display: flex;
 }
+
 .summary-image {
+  height: 10px;
+  width: 10px;
+  margin-right: 1%;
+  float: left;
 	background: url("img/whiteSquare.png");
-	height: 10px;
-	width: 10px;
-	float: left;
-	margin-right: 1%;
-
 }
-.summary-text{
 
-}
 .summary-amount {
-
 	flex-grow: 1;
 	text-align: right;
 }
+
 .accounts {
+  height: 60%;
 	padding: 0 5% 0 5%;
-	height: 60%;
 }
+
 .individual-accounts {
+  padding: 3% 0 3% 0;
 	display: flex;
 	align-items: center;
 	color: #9397A5;
 	border-bottom: 1px solid #9397A5;
-	padding: 3% 0 3% 0;
-
 }
+
 .account-image {
+  height: 30px;
+  width: 30px;
+  margin-right: 2%;
+  background-size: cover;
+  align-self: flex-start;
 	background: url("img/photo.gif");
-	height: 30px;
-	width: 30px;
-	margin-right: 2%;
-	background-size: cover;
-	align-self: flex-start;
 }
 
 #accountProgressBar {
   width: 50%;
   height: 25px;
   position: relative;
-  background-color: #ffffff;
   border: solid 2px lightgrey;
   border-radius: 9px;
+  background-color: #ffffff;
 }
 
 #accountBar {
-  background: linear-gradient(to right, #f2f2f2 , #E6E6E6);
   width: 50%;
   height: 25px;
   position: absolute;
   border-radius: 9px;
+  background: linear-gradient(to right, #f2f2f2 , #E6E6E6);
 }
 /* ----- END Second Panel -----*/
 
 /* ----- Third Panel -----*/
 .third-panel {
-    float: left;
     width: 60%;
-    background: #ffffff;
-    overflow: auto;
     height: 100%;
     max-height: 100%;
+    float: left;
+    overflow: auto;
+    position: absolute; 
+    right: -120%; 
+    top: 0; 
+    z-index: 100;
     border: solid 1px #868686;
     box-shadow:  0 0 10px rgba(0,0,0,0.6);
-    position: absolute; right: -120%; top: 0; z-index: 100;
+    background: #ffffff;
 }
 
 .transaction-detail-header {
-	background-color: #c9c9c9;
-	height: 60px;
-	width: 100%;
+  height: 60px;
+  width: 100%;
 	padding: 1% 10% 5% 5%;
+  background-color: #c9c9c9;
 }
 
 .transaction-detail-subheader {
-	background-color: #e4e4e4;
 	height: 30px;
 	width: 100%;
 	display: flex;
 	padding: 0 5 0 5;
+  background-color: #e4e4e4;
 }
 .subheader-space {
 	flex-grow: 5;
@@ -201,17 +209,17 @@ a {
 }
 
 .transaction-individual {
+  padding: 2% 0 2% 0;
 	display: flex;
 	border-bottom: 1px solid #d7d7d7;
-	padding: 2% 0 2% 0;
 }
 
 .transaction-info-image {
-	background: url("img/photo.gif");
 	height: 50px;
 	width: 50px;
-	background-size: cover;
 	align-self:	center;
+  background-size: cover;
+  background: url("img/photo.gif");
 }
 .transaction-info-text {
 	flex-grow: 4;
@@ -230,7 +238,7 @@ a {
 /*<!-- CSS media query within a stylesheet -->*/
 @media (max-width: 767px) {
   .entry-content, .first-panel  {
-    width: 100% ;
+    width: 97% ;
     padding: 0;
     margin-left: auto;
     margin-right: auto;

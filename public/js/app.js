@@ -6,17 +6,19 @@ $(function() {
         if (open == 0) {
             var $second = $('.second-panel');
             if (windowWidth < 767) {
+                $(this).css("background", "#d7d7d7");
                 $second.animate({right: 0}, 1000);
                 move();
                 open = 1;
             }
             else {
+                $(this).css("background", "#d7d7d7");
                 $second.animate({right: '10%'}, 1000);
                 move();
                 open = 1;
             }
         }
-        $(this).css("background", "#d7d7d7");
+        
     });
     $('.individual-accounts').click(function(ev) {
         var $third = $('.third-panel');
