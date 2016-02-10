@@ -57,6 +57,7 @@ body {
   float: left;
   border-radius: 9px;
 }
+/* ----- END First Panel -----*/
 
 
 /* ----- Second Panel -----*/
@@ -155,7 +156,7 @@ a {
   position: absolute;
   border-radius: 9px;
 }
-
+/* ----- END Second Panel -----*/
 
 /* ----- Third Panel -----*/
 .third-panel {
@@ -223,8 +224,10 @@ a {
 .flex {
 	display: flex;
 }
-/*<!-- CSS media query within a stylesheet -->*/
+/* ----- END Third Panel -----*/
 
+
+/*<!-- CSS media query within a stylesheet -->*/
 @media (max-width: 767px) {
   .entry-content, .first-panel  {
     width: 100% ;
@@ -232,13 +235,10 @@ a {
     margin-left: auto;
     margin-right: auto;
   }
-
   .second-panel, .third-panel {
   	width: 100%;
   	margin-left: auto;
     margin-right: auto;
 
   }
-
-
 }
