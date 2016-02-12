@@ -1,6 +1,7 @@
 {
   "name": "Yodlee-coding-challenge",
   "version": "0.0.1",
+  "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
