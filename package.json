@@ -2,7 +2,7 @@
   "name" : "Yodlee-coding-challenge",
   "version" : "0.0.1",
   "scripts" : {
-    "start" : "node Index.js"
+    "start" : "node index.js"
   },
   "dependencies" : {
     "bootstrap": "^3.3.6",
