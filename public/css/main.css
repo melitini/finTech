@@ -137,12 +137,12 @@ a {
 }
 
 .account-image {
+  background: url("img/photo.gif");
   height: 30px;
   width: 30px;
   margin-right: 2%;
   background-size: cover;
   align-self: flex-start;
-	background: url("img/photo.gif");
 }
 
 #accountProgressBar {
@@ -215,11 +215,11 @@ a {
 }
 
 .transaction-info-image {
-	height: 50px;
-	width: 50px;
-	align-self:	center;
-  background-size: cover;
   background: url("img/photo.gif");
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+  align-self: center;
 }
 .transaction-info-text {
 	flex-grow: 4;
