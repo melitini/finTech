@@ -5,11 +5,9 @@ This prototype was built on Node.js using the following:
 HTML, CSS, JavaScript, Bootstrap, Normalize.css, EJS, Express, jQuery. 
 
 Client Instructions:
-* Part-1:
-    * As Per the attached wireframe, each vertical column has list items. When you select any list item, next vertical column is     presented per wireframe 2. Note that the 2nd column slightly overlaps with the first one. Likewise selecting any list item in the vertical column brings up another vertical column.
-
-* Part-2:
-    * When you load these pages over mobile or smaller width browser, it should show One full page and on click would show another full page instead of overlapping of col. In other words, responsive layout; full view per wireframes without any overlapping for smaller screen but overlapping views for tablet or larger screen sizes.
+==
+* Part-1: As Per the attached wireframe, each vertical column has list items. When you select any list item, next vertical column is     presented per wireframe 2. Note that the 2nd column slightly overlaps with the first one. Likewise selecting any list item in the vertical column brings up another vertical column.
+* Part-2: When you load these pages over mobile or smaller width browser, it should show One full page and on click would show another full page instead of overlapping of col. In other words, responsive layout; full view per wireframes without any overlapping for smaller screen but overlapping views for tablet or larger screen sizes.
 
 To see original wireframes: https://drive.google.com/folderview?id=0B41cQP5xsWv3b3RDV19LYlg1UVk&usp=sharing
 
